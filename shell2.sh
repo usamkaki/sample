@@ -33,3 +33,5 @@ ps -ef | grep "python" | awk -F " " '{print $2 $8}' #here awk command is used to
 # sudo find/ -name <filename> --> to find all the files in a VM
 
 set -u #This is useful for debugging and ensuring that your scripts don't accidentally operate with uninitialized variables.
+
+./<filename>.sh | more #To view in file mode and for a better view.
