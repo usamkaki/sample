@@ -31,3 +31,5 @@ ps -ef | grep "python" | awk -F " " '{print $2 $8}' #here awk command is used to
 #curl vs wget --> curl is used to view the stuffs without downloading it and wget downloads the file first
 
 # sudo find/ -name <filename> --> to find all the files in a VM
+
+set -u #This is useful for debugging and ensuring that your scripts don't accidentally operate with uninitialized variables.
