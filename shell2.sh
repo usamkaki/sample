@@ -35,3 +35,6 @@ ps -ef | grep "python" | awk -F " " '{print $2 $8}' #here awk command is used to
 set -u #This is useful for debugging and ensuring that your scripts don't accidentally operate with uninitialized variables.
 
 ./<filename>.sh | more #To view in file mode and for a better view.
+
+aws ec2 describe-instances | jq ".Reservations[].Instances[].InstanceId' #this comment is used to get only instances id and reservations, 
+instances are part of json file and syntax needs to be return like as the json file shows
